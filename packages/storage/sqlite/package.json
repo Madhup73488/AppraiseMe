@@ -1,0 +1,36 @@
+{
+  "name": "@appraiseme/storage-sqlite",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "SQLite local storage adapter",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "clean": "rm -rf dist .turbo"
+  },
+  "dependencies": {
+    "@appraiseme/contracts": "workspace:*",
+    "@appraiseme/domain": "workspace:*",
+    "better-sqlite3": "^11.7.0"
+  },
+  "devDependencies": {
+    "@appraiseme/test-utils": "workspace:*",
+    "@types/better-sqlite3": "^7.6.12",
+    "vitest": "^2.1.8"
+  }
+}

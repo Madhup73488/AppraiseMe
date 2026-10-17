@@ -1,0 +1,39 @@
+{
+  "name": "@appraiseme/storage-turso",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Turso/libSQL storage adapter",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./web": {
+      "types": "./dist/web-store.d.ts",
+      "import": "./dist/web-store.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run --passWithNoTests",
+    "test:watch": "vitest",
+    "clean": "rm -rf dist .turbo"
+  },
+  "dependencies": {
+    "@appraiseme/contracts": "workspace:*",
+    "@appraiseme/domain": "workspace:*",
+    "@libsql/client": "^0.14.0"
+  },
+  "devDependencies": {
+    "@appraiseme/test-utils": "workspace:*",
+    "vitest": "^2.1.8"
+  }
+}

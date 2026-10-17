@@ -1,0 +1,41 @@
+# dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# build outputs
+dist/
+build/
+.next/
+out/
+.turbo/
+
+# tauri
+apps/desktop/src-tauri/target/
+
+# env files
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# ide
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# os
+.DS_Store
+Thumbs.db
+
+# testing
+coverage/
+
+# supabase
+supabase/.branches
+supabase/.temp
+
+# misc
+*.log

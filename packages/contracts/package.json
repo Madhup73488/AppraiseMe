@@ -1,0 +1,28 @@
+{
+  "name": "@appraiseme/contracts",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Adapter interfaces and DTO boundaries",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "echo \"No tests yet\" && exit 0",
+    "clean": "rm -rf dist .turbo"
+  },
+  "dependencies": {
+    "@appraiseme/domain": "workspace:*"
+  }
+}

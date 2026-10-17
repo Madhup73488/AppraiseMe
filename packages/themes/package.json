@@ -1,0 +1,30 @@
+{
+  "name": "@appraiseme/themes",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Semantic tokens and theme definitions",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./tokens.css": "./src/tokens.css"
+  },
+  "files": [
+    "dist",
+    "src/tokens.css"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run --passWithNoTests",
+    "clean": "rm -rf dist .turbo"
+  },
+  "devDependencies": {
+    "vitest": "^2.1.9"
+  }
+}

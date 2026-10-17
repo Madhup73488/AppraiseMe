@@ -1,0 +1,52 @@
+{
+  "name": "@appraiseme/web",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf .next .turbo"
+  },
+  "dependencies": {
+    "@appraiseme/ai-anthropic": "workspace:*",
+    "@appraiseme/ai-compatible": "workspace:*",
+    "@appraiseme/ai-core": "workspace:*",
+    "@appraiseme/ai-gemini": "workspace:*",
+    "@appraiseme/ai-openai": "workspace:*",
+    "@appraiseme/ai-openrouter": "workspace:*",
+    "@appraiseme/application": "workspace:*",
+    "@appraiseme/config": "workspace:*",
+    "@appraiseme/contracts": "workspace:*",
+    "@appraiseme/control-plane": "workspace:*",
+    "@appraiseme/domain": "workspace:*",
+    "@appraiseme/export": "workspace:*",
+    "@appraiseme/reports": "workspace:*",
+    "@appraiseme/storage-memory": "workspace:*",
+    "@appraiseme/storage-supabase": "workspace:*",
+    "@appraiseme/storage-turso": "workspace:*",
+    "@appraiseme/sync": "workspace:*",
+    "@appraiseme/themes": "workspace:*",
+    "@appraiseme/ui": "workspace:*",
+    "@tanstack/react-query": "^5.62.7",
+    "lucide-react": "^0.469.0",
+    "next": "^15.1.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tailwindcss-animate": "^1.0.7",
+    "zod": "^3.24.1",
+    "zustand": "^5.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@types/react": "^19.0.2",
+    "@types/react-dom": "^19.0.2",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.7.2"
+  }
+}
